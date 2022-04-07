@@ -37,7 +37,7 @@ You can also make GraphQL calls that take in variables
 client = ShopifyAPI::Clients::Graphql::Admin.new(session: session)
 
 query = <<~QUERY
-  query testQueryWithVariables($first: Int!){
+  query testQueryWithVariables($first: Int){
     products(first: $first) {
       edges {
         cursor
